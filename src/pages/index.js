@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
 import GameList from '../components/GameList';
+import SectionMenu from "@/src/components/SectionMenu";
 import styles from '../styles/Home.module.scss';
 
 const Home = () => (
     <div className={styles.container}>
         <Header />
-        <SearchBar />
+        <SectionMenu />
         <GameList />
     </div>
 );

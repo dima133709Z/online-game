@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import gamesData from './gamesData.json'; // Import the game data from the JSON file
+import gamesData from './gamesData.json';
 
 const initialState = {
     games: gamesData,
@@ -17,8 +17,11 @@ const gamesSlice = createSlice({
                 game.title.toLowerCase().includes(state.searchTerm.toLowerCase())
             );
         },
+        showAllGames(state) {
+            state.filteredGames = state.games;
+        },
     },
 });
 
-export const { setSearchTerm } = gamesSlice.actions;
+export const { setSearchTerm, showAllGames } = gamesSlice.actions;
 export default gamesSlice.reducer;

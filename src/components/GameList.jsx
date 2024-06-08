@@ -4,17 +4,14 @@ import GameCard from './GameCard';
 import styles from '../styles/GameList.module.scss';
 
 const GameList = () => {
-
-    const games = useSelector((state) => state.games.filteredGames);
+    const filteredGames = useSelector((state) => state.games.filteredGames);
 
     return (
-
         <div className={styles.gameList}>
-            {games.map((game) => (
+            {filteredGames.map((game) => (
                 <GameCard key={game.id} game={game} />
             ))}
         </div>
-
     );
 };
 
