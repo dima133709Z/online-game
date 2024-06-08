@@ -12,27 +12,30 @@
   background-repeat: no-repeat;
 
 
-.title {
-  height: 30px;
-  background-color: #dddddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h3 {
-    font-size: 20px;
+  .title {
+    height: 30px;
+    background-color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 20px;
+    }
   }
-}
+
   .description {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     background-color: #dddddd;
+
     p {
       color: #666;
       margin: 0;
     }
+
     margin-top: auto;
   }
-
 }

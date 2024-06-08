@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { setSearchTerm } from '../redux/gamesSlice';
+import {useDispatch} from 'react-redux';
+import {setSearchTerm} from '../redux/gamesSlice';
 import styles from '../styles/SearchBar.module.scss';
 
 const SearchBar = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import GameCard from './GameCard';
 import styles from '../styles/GameList.module.scss';
 
@@ -9,7 +9,7 @@ const GameList = () => {
     return (
         <div className={styles.gameList}>
             {filteredGames.map((game) => (
-                <GameCard key={game.id} game={game} />
+                <GameCard key={game.id} game={game}/>
             ))}
         </div>
     );
